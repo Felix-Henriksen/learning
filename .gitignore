@@ -1,0 +1,33 @@
+# Hemmeligheter - skal ALDRI på GitHub
+.env
+*.env
+
+# Python virtuelle miljøer
+venv/
+.venv/
+env/
+
+# Python cache-filer
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE-spesifikke filer
+.vscode/
+.idea/
+
+# OS-spesifikke filer
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Databasefiler (skal ikke deles - kun skjemaet)
+*.db
+*.sqlite
+*.sqlite3
+
+# Mediafiler vi genererer (ikke kildekode)
+*.mp4
+*.mp3
+*.wav
+manus/
