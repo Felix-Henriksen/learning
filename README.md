@@ -20,4 +20,4 @@ Under utvikling – Delprosjekt 0 (læring av grunnleggende Python).
 
 ## Forfatter
 
-Felix – IT-student ved USN
+Felix Henriksen – IT-student ved USN

@@ -18,11 +18,13 @@
 - **`py`-launcher:** Et verktøy på Windows som kan kjøre flere Python-versjoner. Jeg bruker `py` istedenfor `python`-kommandoen for å sikre at jeg treffer 3.12.
 - **PATH:** En liste Windows har over mapper den leter i når jeg skriver kommandoer i terminalen.
 - **`mkdir`:** Kommando som lager en ny mappe.
-- **`cd` og `dir`/`ls`:** Kommandoer for å bevege seg mellom mapper og se hva som ligger i dem.
+- **`cd`, `dir`/`ls` og `pwd`:** Kommandoer for å bevege seg mellom mapper og se hva som ligger i dem.
 - **Variabel:** Et navngitt "rom" som lagrer en verdi.
 - **f-string:** En tekst-string i Python som lar meg sette inn verdier fra variabler med `{}`.
-- **`print-funksjon`:** print() - en funksjon som skriver ut informasjon i terminalen.
+- **print-funksjon:** print() - en funksjon som skriver ut informasjon i terminalen.
 - **Kjøring av skriptet:** Kjørte skriptet både i PowerShell og i innebygd Terminal på VSCode.
+- **.gitignore:** En fil som bestemmer hvilke filer som inneholder hemmeligheter ikke skal vises i github
+- **git status, git add ., git commit -m, git push:** Git kommandoer som sender over nye oppdateringer til github repo.
 
 ## Det jeg slet med
 
