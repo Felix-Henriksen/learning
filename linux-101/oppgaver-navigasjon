@@ -1,0 +1,85 @@
+Øveoppgaver: Linux navigasjon og filer
+
+Oppgave 1 – Orientering
+
+1. Finn ut hvor du står akkurat nå
+    `pwd` 
+2. List ut alt i mappa, inkludert skjulte filer
+    `ls -la`
+3. Gå til hjemmemappa din uansett hvor du er, på to forskjellige måter
+    `cd` eller `cd~`
+
+
+
+Oppgave 2 – Bygge en struktur
+Lag denne mappestrukturen inne i ~/learning/linux-101/:
+ovelser/
+|-- mappe-a/
+|-- mappe-b/
+|-- mappe-c/
+
+1. Lag ovelser-mappa
+    1 - `cd learning/linux-101`
+    2 - `mkdmir ovelser`
+2. Gå inn i den    
+    `cd ovelser`
+3. Lag de tre undermappene mappe-a, mappe-b, mappe-c – på én kommando
+    `mkdir mappe-a mappe-b mappe-c`
+4. Bekreft at alle tre ble laget
+    `ls`
+
+
+
+Oppgave 3 – Navigasjon i dybden
+
+1. Gå inn i mappe-a
+    `cd mappe-a`
+2. Lag en undermappe der som heter dypt
+    `mkdir dypt`
+3. Gå inn i dypt
+    `cd dypt`
+4. Sjekk hvor du står (full sti)
+    `pwd`
+5. Gå tilbake til ovelser – tenk på hvor mange nivåer opp det er
+    `cd ..` (x2) eller `cd../..`
+6. Bruk cd - og se hvor du havner
+    home directory
+
+
+
+Oppgave 4 – Filer vs mapper
+
+1. Stå i ovelser-mappa
+    `cd ovelser`
+2. Lag en tom fil som heter notat.txt
+    `touch notat.txt`
+3. Lag en mappe som heter dokumenter
+    `mkdir dokumenter`
+4. Bruk ls -l og finn ut: hvordan ser du forskjell på fila og mappa i outputen? (Hint: se på det aller første tegnet på hver linje)
+    directory - d (første tegnet)
+    fil - `-` (første tegnet)
+
+
+
+Oppgave 5 – Opprydding
+
+1. Slett den tomme mappa mappe-c
+    `rmdir mappe-c`
+2. Prøv å slette mappe-a med rmdir – hva skjer? Hvorfor? (Den har jo dypt inni seg)
+    kan ikke slette med `rmdir` siden directory ikke er tom, bruker `rm -r mappe-a`
+3. Tenk gjennom: hvilken kommando måtte du brukt for å slette mappe-a med innhold? (Du trenger ikke gjøre det – bare svar i notatene)
+
+
+
+Oppgave 6 – Tab-fullføring
+
+1. Begynn å skrive cd doku og trykk Tab – fullføres det til dokumenter?
+2. Prøv å skrive de første bokstavene av en kommando eller mappe og bruk Tab flere steder. Noter hvor det sparte deg tid.
+
+
+
+Bonusutfordring 
+
+1. Lag en fil og en mappe med samme navn i forskjellige mapper – fungerer det? Hvorfor/hvorfor ikke?
+2. Hva skjer hvis du kjører cd helt alene, uten noe etter? Test det og noter.
+3. Hva er forskjellen på ls, ls -a, og ls -la i praksis? Beskriv med dine egne ord etter å ha testet alle tre.
