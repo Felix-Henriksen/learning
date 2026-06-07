@@ -7,7 +7,7 @@ Oppgave 1 – Orientering
 2. List ut alt i mappa, inkludert skjulte filer
     `ls -la`
 3. Gå til hjemmemappa din uansett hvor du er, på to forskjellige måter
-    `cd` eller `cd~`
+    `cd` eller `cd ~`
 
 
 
@@ -20,7 +20,7 @@ ovelser/
 
 1. Lag ovelser-mappa
     1 - `cd learning/linux-101`
-    2 - `mkdmir ovelser`
+    2 - `mkdir ovelser`
 2. Gå inn i den    
     `cd ovelser`
 3. Lag de tre undermappene mappe-a, mappe-b, mappe-c – på én kommando
@@ -66,20 +66,27 @@ Oppgave 5 – Opprydding
 1. Slett den tomme mappa mappe-c
     `rmdir mappe-c`
 2. Prøv å slette mappe-a med rmdir – hva skjer? Hvorfor? (Den har jo dypt inni seg)
-    kan ikke slette med `rmdir` siden directory ikke er tom, bruker `rm -r mappe-a`
+    kan ikke slette med `rmdir` siden directory ikke er tom
 3. Tenk gjennom: hvilken kommando måtte du brukt for å slette mappe-a med innhold? (Du trenger ikke gjøre det – bare svar i notatene)
-
+    `rm -r mappe-a`
 
 
 Oppgave 6 – Tab-fullføring
 
 1. Begynn å skrive cd doku og trykk Tab – fullføres det til dokumenter?
+    Ja
 2. Prøv å skrive de første bokstavene av en kommando eller mappe og bruk Tab flere steder. Noter hvor det sparte deg tid.
+    Sparte tid for å skrive Dokumenter og for å skrive rmdir
 
 
 
 Bonusutfordring 
 
 1. Lag en fil og en mappe med samme navn i forskjellige mapper – fungerer det? Hvorfor/hvorfor ikke?
+    Ja det funker, fordi systemet ser at det er forskjellig path. Linux tillater IKKE samme navn hvis det er i samme path.
 2. Hva skjer hvis du kjører cd helt alene, uten noe etter? Test det og noter.
+    Man blir flyttet til home dir
 3. Hva er forskjellen på ls, ls -a, og ls -la i praksis? Beskriv med dine egne ord etter å ha testet alle tre.
+    ls - lister opp filer og mapper, men skjuler alt som starter med `.`
+    ls -a - lister ALT, inkludert skjulte filer/mapper (`-a` = "all").
+    ls -la - kombinerer -l (lang format: rettigheterm eier, størrelse, dato) med `-a` (alt, inkludert skjulte mapper/filer)
